@@ -1,13 +1,424 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Merriweather&family=PT+Serif&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bebas+Neue&family=Merriweather&family=PT+Serif&family=Secular+One&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bebas+Neue&family=Merriweather&family=PT+Serif&family=Rubik+Spray+Paint&family=Secular+One&family=Shrikhand&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+  ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2 {
+  text-align: center;
+  font-family: 'PT Serif', serif, 'Secular One', sans-serif;
+  font-size: 2.5rem;
+  margin: 25px;
+  /* color: rgb(23, 90, 205); */
+  color: #043973;
+  font-weight: bolder;
+
+}
+
+/* styling of logo*/
+.brand-logo {
+  height: 120px;
+  width: 120px;
+  margin: 10px 20px 10px 30px;
+
+}
+
+/* Styling of Navbar*/
+.nav {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  background-color: #002349;
+  cursor: pointer;
+}
+
+.link:hover {
+
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+/* styling of Navlink items */
+.link {
+  padding: 30px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+/* styling of brand name of navbar*/
+.brand-name {
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-left: -17px !important;
+  margin-right: 200px;
+  color: white;
+
+}
+
+/* .active-class{
+  color:rgb(29, 29, 161);
+  text-decoration: underline;
+  font-size: larger;
+} */
+/*styling the image used inside home page*/
+.home-section {
+
+  background: url("https://images.unsplash.com/photo-1485988412941-77a35537dae4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1196&q=80");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.text-effect {
+  font-weight: bolder;
+  font-size: 100px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 35vh;
+}
+
+/* Styling the card elements in home page */
+.home-card-section {
+  margin:auto auto -2.5rem auto;
+  height: 55rem;
+  width: 100%;
+  background-color: #957C3D;
+  position: relative;
+  top: -2.5rem;
+}
+.read-articles-heading{
+text-shadow:2px 2px #a4bdd7;
+font-family: 'Alfa Slab One', cursive;
+
+}
+.home-card-section h1 {
+  position: relative;
+  top: 2rem;
+}
+
+.home-card {
+  height: 200px;
+  width: 350px;
+  margin: 90px 70px;
+  position: relative;
+  float: left;
+  border-radius: 10px;
+
+}
+
+.home-card img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  display: block;
+
+
+
+}
+
+.home-card img:hover {
+  box-shadow: 0px 20px 18px -5px gray;
+  transform: scale(1.05, 1.05);
+}
+
+.card-info {
+  margin: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+
+}
+
+/* Styling of card button  */
+.card-info button {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.0rem;
+  padding: 10px;
+  font-weight: bolder;
+  border-radius: 5px;
+  background-color: #043973;
+  color: white;
+
+}
+
+/* Styling card hove effect  */
+.card-info button:hover {
+  background-color: #095db6;
+  cursor: pointer;
+}
+
+/* styling of footer section */
+.footer-section {
+  background-color: #002349;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.col {
+  margin: 30px 0px;
+}
+
+.footer-color {
+  color: white;
+}
+
+.col ul {
+  list-style: none;
+}
+
+.footer-brand {
+  font-size: 1.7rem;
+  color: gold;
+}
+
+.f-link {
+  text-decoration: underline;
+}
+
+.social-link {
+  color: white;
+}
+
+.row {
+  text-align: center;
+
+  border-top: 1px solid black;
+
+}
+
+h3,
+h4 {
+  margin: 10px 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* styling about section */
+.about {
+  margin-bottom: 2rem;
+}
+
+/* styling of login form section*/
+.login-container {
+  height: 80vh;
+  width: 100%;
+  margin-top: 100px;
+
+}
+
+.form-container,
+.sinup-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+input {
+  width: 30rem;
+  padding: 20px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.submit-btn,
+.signup-btn {
+  width: 200px;
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: auto;
+  margin-top: 50px;
+  background-color: #043973;
+  color: white;
+  border: 2px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.submit-btn:hover,
+.signup-btn:hover {
+  background-color: #0a5eb8;
+}
+
+/* placing the login button at center */
+.login-btn,
+.sinup-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* styling the signup container */
+.sinup-container {
+  height: 100vh;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.signup-reference {
+  margin: 30px;
+
+  text-align: center;
+}
+
+.signup-reference a {
+
+  text-decoration: underline;
+}
+
+.signup-reference-para {
+  margin-bottom: 20px;
+}
+
+.form-error {
+  font-size: 0.7rem;
+  color: rgb(173, 31, 31)
+}
+
+/* styling of blog section */
+.web-banner,
+.app-banner,
+.blockchain-banner,
+.machine-banner,
+.ai-banner,
+.dl-banner {
+  height: 400px;
+  width: 800px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.web-dev-section,
+.app-dev-section,
+.blockchain-section,
+.machine-learning-section,
+.ai-section,
+.dl-section {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 120px;
+}
+
+.readmore {
+  text-decoration: underline;
+}
+
+/* styling of error page */
+.error-page {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-page h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  text-shadow: 2px 2px 8px #2596be;
+}
+
+
+/* Making the website responsive */
+
+@media only screen and (max-width:600px) {
+  .brand-logo {
+    height: 100px;
+    width: 100px;
+    margin-left: 200px;
+  }
+
+  .brand-name {
+    font-size: 1.5rem;
+    display: block;
+    position: relative;
+    left: 113px;
+    top: -20px;
+  }
+
+  .link {
+    font-size: 1.2rem;
+    padding: auto;
+    margin: auto
+  }
+
+  .nav {
+    display: block;
+    width: 100vw;
+    height: 200px;
+    text-align: center;
+  }
+
+  .home-section {
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+
+  }
+
+  .text-effect {
+    font-size: 60px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 35vh;
+  }
+
+  .home-card-section {
+    margin: auto;
+    height: 230vh;
+    width: 100%;
+
+  }
+
+  .home-card {
+    margin: 70px 70px 70px 120px;
+
+  }
+
+  .footer-section p,
+  li {
+    font-size: 0.9rem;
+  }
+
 }
